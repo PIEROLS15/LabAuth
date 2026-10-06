@@ -30,7 +30,7 @@ jobs:
         run: podman save localhost/token-api:${TAG} -o token-api.tar
 
       - name: Import into k3s
-        run: sudo k3s ctr images import token-api.tar
+        run: sudo /usr/local/bin/k3s ctr images import token-api.tar
 
       - name: Apply manifests
         run: |
