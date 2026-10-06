@@ -30,9 +30,9 @@ target/
 quarkus.log
 
 # Maven
-.mvn/
-!mvnw
-!mvnw.cmd
+# .mvn/
+# !mvnw
+# !mvnw.cmd
 
 # =========================
 # IDEs
